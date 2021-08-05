@@ -1,0 +1,18 @@
+<template name="m-poi">
+  <view class="m-poi" bindtap="viewTrip" data-type="{{ poi.name }}" data-id="{{ poi.id }}" data-name="{{ poi.name }}">
+    <image class="cover" src="{{ poi.goodsCoverImg }}" background-size="cover"></image>
+    <block wx:if="{{poi.deleted == 1}}">
+      <image class="label" src="../../static/images/存在.png"></image>
+    </block>
+    <block wx:else>
+      <image class="label" src="../../static/images/不存在.png"></image>
+    </block>
+        
+    <view class="info">
+      <view class="title"><text>{{ poi.company }}</text></view>
+      <view class="rating">
+        <text> {{ poi.name }} \n SN:{{ poi.sn }} \n 数量：{{ poi.count }} \n 入库人：{{ poi.makeS }} \n 时间：{{ poi.rukuData }}</text>
+      </view>
+    </view>
+  </view>
+</template>

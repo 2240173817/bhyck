@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/cangku/cangku",
+    "pages/ruku/ruku",
+    "pages/zhuye/zhuye"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "navi-card": "/components/navi-card/index",
+    "l-card": "/dist/card/index",
+    "l-tab-bar": "/dist/tab-bar/index",
+    "l-grid": "/dist/grid/index",
+    "l-grid-item": "/dist/grid-item/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "content-card": "/components/content-card/index",
+    "l-form": "/dist/form/index",
+    "l-form-item": "/dist/form-item/index",
+    "l-rate": "/dist/rate/index",
+    "l-button": "/dist/button/index",
+    "l-input": "/dist/input/index",
+    "l-list": "/dist/list/index",
+    "l-calendar": "/dist/calendar/index",
+    "l-message": "/dist/message/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

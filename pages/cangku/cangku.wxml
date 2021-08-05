@@ -1,0 +1,32 @@
+<view>
+  <view class="header">
+    <image class='header-bg' src='/static/images/lan.png'></image>
+    <text class='header-desc'><text class='header-name'>红宝云 </text>仓库管理系统</text>
+  </view>
+
+<van-notice-bar
+  color="	#FF1493"
+  mode="closeable"
+  left-icon="volume-o"
+  scrollable="true"
+  text="出入库请仔细严谨，做好标签"
+/>
+
+  <view class="main">
+    <navi-card
+      wx:for="{{naviConfigs.baseConfig}}"
+      wx:for-item="naviConfig"
+      wx:key="index"
+      data-idx="{{index}}"
+      title="{{naviConfig.title}}"
+      icon="{{naviConfig.icon}}"
+      data-title="{{naviConfig.title}}"
+      data-navigateMark="{{naviConfig.navigateMark}}"
+      bindtap="onNaviCard"
+    />
+  </view>
+
+</view>
+
+<!--  -->
+<l-tab-bar list="{{list}}" />

@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/cangku/cangku",
+          "pathName": "pages/cangku/cangku",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/zhuye/zhuye",
+          "pathName": "pages/zhuye/zhuye",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

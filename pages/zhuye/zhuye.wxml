@@ -1,0 +1,29 @@
+<import src="../../components/poi/poi.wxml" />
+
+<!-- 吸顶菜单 -->
+<van-sticky offset-top="{{ 0 }}">
+  <van-dropdown-menu>
+    <van-dropdown-item model:value="{{ company }}" options="{{ option1 }}" />
+    <van-dropdown-item model:value="{{ name }}" options="{{ option2 }}" />
+    <van-dropdown-item model:value="{{ deleted }}" options="{{ option3 }}" />
+  </van-dropdown-menu>
+  <van-search value="{{ xinghao }}" shape="round" background="#4fc08d" placeholder="请输入物品型号" bind:change="onSearch"
+    bind:search="onSearch" />
+</van-sticky>
+<scroll-view class="list" style="height: {{ windowHeight - 70 / pixelRatio }}px; width: {{ windowWidth }}px;"
+  scroll-y="true" bindscrolltolower="loadMore" lower-threshold="800">
+  <block wx:for="{{cklist}}" wx:for-item="poi" wx:key="id" bind:tap="viewTrip">
+    <template is="m-poi" data="{{poi: poi}}"/>
+  </block>
+</scroll-view>
+<view class="movable-area">
+  <view class="movable-view" direction="all" catchtap="toAddConsult">
+    <view class="plus-position" catchtap="getListShuxin">刷</view>
+  </view>
+</view>
+
+
+
+
+
+<l-tab-bar list="{{list}}" />
